@@ -1,0 +1,159 @@
+<!DOCTIPE HTML>
+<html>
+	<head>
+		<title> FORM REGISTER </title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<style>
+			body{
+				background-color:khaki;
+			}
+			h1{
+				color:purple;
+				font-family: Serif, Slab, Comic;
+			}
+		</style>
+		<style>
+			p {
+				margin-left: 1.5em;
+			}
+			
+			#nf {
+				color:blue;
+			}
+			.ganjil{
+				color:yellow;
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body bgcolor="cream" text="brown">
+		<h1 align="center"> Form Registration</h1>
+		<h2 style="font-size:30px;color:red;text-align:center"> KSR UPT UPI Kampus Serang</h2>
+		<hr/>
+	<body>
+		<form action="proses.php" method="POST"> 
+		<fieldset style="background-color:cream;">
+			
+			<h2 class="ganjil">BIODATA PRIBADI</h2>
+			<div>
+				<p id="nf">
+				<label> Nama Lengkap </label>
+				<div>
+					<input type="text" name="nama" value="" size="40" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label for="tanggal_lahir">Tanggal Lahir</label>
+				<div>
+					<input type="date" name="tanggal_lahir" value="2001-11-03" id="tanggal_lahir" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Jenis Kelamin </label>
+				<div>
+					<input type="radio" name="jk" value="L" checked />Laki-Laki
+					<input type="radio" name="jk" value="P"  />Perempuan
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Agama </label>
+				<div>
+					<input type="radio" name="a" value="I" checked />Islam
+					<input type="radio" name="a" value="B"  />Budha
+					<input type="radio" name="a" value="H"  />Hindu
+					<input type="radio" name="a" value="K"  />Kristen
+					<input type="radio" name="a" value="Ka"  />Katholik
+					<input type="radio" name="a" value="Ko"  />Konghucu
+					<input type="radio" name="a" value="Ko"  />Lainnya
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Email </label>
+				<div>
+					<input type="text" name="email" value="" size="40" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> No HP </label>
+				<div>
+					<input type="text" name="no hp" value="" size="40" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Alamat </label>
+				<div>
+					<textarea name="alamat" rows="6" cols="40"></textarea>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Pengalaman Organisasi </label>
+				<div>
+					<textarea name="alamat" rows="6" cols="40"></textarea>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Pilihan Pertama Divisi </label>
+				<div>
+					<select name="bidang">
+						<option value="">--Pilih--</option>
+						<option value="Divisi Pendidikan dan Kaderisasi">Pendidikan dan Kaderisasi</option>
+						<option value="Divisi Komunikasi dan Informasi">Komunikasi dan informasi</option>
+						<option value="Divisi Logistik">Logistik</option>
+						<option value="Divisi Hubungan Masyarakat">Hubungan Masyarakat</option>
+					</select>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Alasan </label>
+				<div>
+					<textarea name="alasan" rows="6" cols="40"></textarea>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Pilihan Kedua Divisi </label>
+				<div>
+					<select name="bidang">
+						<option value="">--Pilih--</option>
+						<option value="Divisi Pendidikan dan Kaderisasi">Pendidikan dan Kaderisasi</option>
+						<option value="Divisi Komunikasi dan Informasi">Komunikasi dan informasi</option>
+						<option value="Divisi Logistik">Logistik</option>
+						<option value="Divisi Hubungan Masyarakat">Hubungan Masyarakat</option>
+					</select>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Alasan </label>
+				<div>
+					<textarea name="alasan" rows="6" cols="40"></textarea>
+				</div>
+				</p>
+			</div>
+		</fieldset>
+		<div>
+			<input type="Submit" value="Submit" name="Proses" />
+		</div>
+		</form>
+	</body>
+</html>
